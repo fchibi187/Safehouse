@@ -1,0 +1,204 @@
+[
+  {
+    "id": "1",
+    "slug": "eternal-blush-bouquet",
+    "name": "Eternal Blush Bouquet",
+    "category": "Bouquets",
+    "price": 89.00,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=800&q=80",
+      "https://images.unsplash.com/photo-1490750967868-88df5691cc4e?w=800&q=80"
+    ],
+    "description": "A breathtaking arrangement of premium blush and ivory garden roses, complemented by cascading eucalyptus and delicate gypsophila. Hand-tied with our signature gold-edged ribbon.",
+    "shortDescription": "Premium blush roses with eucalyptus & gold ribbon",
+    "badge": "Bestseller",
+    "rating": 4.9,
+    "reviews": 124,
+    "inStock": true,
+    "tags": ["roses", "blush", "premium", "wedding"],
+    "details": {
+      "stemCount": "25–30 stems",
+      "size": "40–50 cm",
+      "vaseLife": "7–10 days",
+      "occasions": ["Wedding", "Anniversary", "Romance"]
+    }
+  },
+  {
+    "id": "2",
+    "slug": "garden-romance",
+    "name": "Garden Romance",
+    "category": "Bouquets",
+    "price": 65.00,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=800&q=80",
+      "https://images.unsplash.com/photo-1487530811015-780c71e5c7b8?w=800&q=80"
+    ],
+    "description": "A lush garden-inspired arrangement featuring soft pink peonies, white ranunculus, and fragrant sweet peas, wrapped in our signature kraft paper with a blush ribbon.",
+    "shortDescription": "Peonies, ranunculus & sweet peas",
+    "badge": "New",
+    "rating": 4.8,
+    "reviews": 87,
+    "inStock": true,
+    "tags": ["peonies", "garden", "romantic"],
+    "details": {
+      "stemCount": "20–25 stems",
+      "size": "35–45 cm",
+      "vaseLife": "5–8 days",
+      "occasions": ["Birthday", "Romance", "Gift"]
+    }
+  },
+  {
+    "id": "3",
+    "slug": "luxe-white-collection",
+    "name": "Luxe White Collection",
+    "category": "Arrangements",
+    "price": 125.00,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80"
+    ],
+    "description": "An elevated all-white arrangement featuring garden roses, orchids, and lily of the valley, presented in our signature matte gold ceramic vessel.",
+    "shortDescription": "All-white roses & orchids in gold ceramic",
+    "badge": "Premium",
+    "rating": 5.0,
+    "reviews": 56,
+    "inStock": true,
+    "tags": ["white", "orchids", "luxury", "arrangement"],
+    "details": {
+      "stemCount": "30–35 stems",
+      "size": "50–60 cm",
+      "vaseLife": "10–14 days",
+      "occasions": ["Wedding", "Sympathy", "Corporate"]
+    }
+  },
+  {
+    "id": "4",
+    "slug": "rose-gift-box",
+    "name": "Rose Gift Box",
+    "category": "Gift Boxes",
+    "price": 79.00,
+    "originalPrice": 95.00,
+    "image": "https://images.unsplash.com/photo-1549429218-4b3abe9c55d2?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1549429218-4b3abe9c55d2?w=800&q=80"
+    ],
+    "description": "Twelve of our finest blush roses, nestled in a luxury matte black gift box with tissue paper, dried petals, and a handwritten card. Perfect for any celebration.",
+    "shortDescription": "12 blush roses in luxury matte black box",
+    "badge": "Sale",
+    "rating": 4.9,
+    "reviews": 203,
+    "inStock": true,
+    "tags": ["gift", "roses", "box", "birthday"],
+    "details": {
+      "stemCount": "12 stems",
+      "size": "30 cm box",
+      "vaseLife": "7–9 days",
+      "occasions": ["Birthday", "Anniversary", "Gift"]
+    }
+  },
+  {
+    "id": "5",
+    "slug": "wild-meadow-bunch",
+    "name": "Wild Meadow Bunch",
+    "category": "Bouquets",
+    "price": 55.00,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1487530811015-780c71e5c7b8?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1487530811015-780c71e5c7b8?w=800&q=80"
+    ],
+    "description": "A free-spirited gathering of wildflowers, dried botanicals, and seasonal blooms. Each bouquet is uniquely composed — no two are exactly alike.",
+    "shortDescription": "Wild & seasonal blooms, uniquely composed",
+    "badge": null,
+    "rating": 4.7,
+    "reviews": 64,
+    "inStock": true,
+    "tags": ["wildflowers", "seasonal", "natural", "bohemian"],
+    "details": {
+      "stemCount": "25–35 stems",
+      "size": "40–50 cm",
+      "vaseLife": "6–9 days",
+      "occasions": ["Birthday", "Housewarming", "Thank you"]
+    }
+  },
+  {
+    "id": "6",
+    "slug": "blush-hatbox",
+    "name": "Blush Hatbox",
+    "category": "Gift Boxes",
+    "price": 110.00,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1490750967868-88df5691cc4e?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1490750967868-88df5691cc4e?w=800&q=80"
+    ],
+    "description": "An exquisite arrangement of premium blush roses, arranged in our signature round hatbox in blush pink. A timeless and unforgettable gift.",
+    "shortDescription": "Premium roses arranged in blush pink hatbox",
+    "badge": "Popular",
+    "rating": 4.9,
+    "reviews": 178,
+    "inStock": true,
+    "tags": ["hatbox", "roses", "luxury", "gift"],
+    "details": {
+      "stemCount": "18–24 stems",
+      "size": "Round, 30 cm",
+      "vaseLife": "7–10 days",
+      "occasions": ["Birthday", "Anniversary", "Valentine's"]
+    }
+  },
+  {
+    "id": "7",
+    "slug": "cascade-orchid",
+    "name": "Cascade Orchid",
+    "category": "Arrangements",
+    "price": 145.00,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+    ],
+    "description": "A dramatic cascading arrangement of white Phalaenopsis orchids, trailing amaranthus, and lush tropical foliage. Statement-making and long-lasting.",
+    "shortDescription": "Cascading orchids with tropical foliage",
+    "badge": "Premium",
+    "rating": 5.0,
+    "reviews": 34,
+    "inStock": true,
+    "tags": ["orchids", "luxury", "statement", "corporate"],
+    "details": {
+      "stemCount": "5–7 stems",
+      "size": "60–80 cm",
+      "vaseLife": "14–21 days",
+      "occasions": ["Corporate", "Wedding", "Home Decor"]
+    }
+  },
+  {
+    "id": "8",
+    "slug": "pink-velvet-subscription",
+    "name": "Pink Velvet Subscription",
+    "category": "Subscriptions",
+    "price": 199.00,
+    "originalPrice": null,
+    "image": "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=800&q=80"
+    ],
+    "description": "Our signature monthly subscription: a curated seasonal arrangement delivered to your door every month. Each delivery is a surprise, thoughtfully composed to suit the season.",
+    "shortDescription": "Monthly curated seasonal arrangements",
+    "badge": "Monthly",
+    "rating": 4.8,
+    "reviews": 89,
+    "inStock": true,
+    "tags": ["subscription", "monthly", "seasonal", "gift"],
+    "details": {
+      "stemCount": "Seasonal",
+      "size": "Varies",
+      "vaseLife": "7–14 days",
+      "occasions": ["Self", "Gift", "Home Decor"]
+    }
+  }
+]

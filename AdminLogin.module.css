@@ -1,0 +1,74 @@
+.page {
+  min-height: 100vh;
+  background: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  background: white;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.logoScript {
+  font-family: var(--font-script);
+  font-size: 2rem;
+  color: var(--green);
+  line-height: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.form { text-align: left; }
+
+.field { margin-bottom: 20px; }
+.field label { display: block; margin-bottom: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+
+.error {
+  font-size: 13px;
+  color: var(--rose);
+  background: var(--blush);
+  padding: 10px 14px;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.btn { width: 100%; justify-content: center; }
+
+.hint {
+  margin-top: 24px;
+  font-size: 11px;
+  color: var(--text-light);
+  line-height: 1.6;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+.hint code {
+  background: var(--cream);
+  padding: 2px 6px;
+  font-family: monospace;
+  font-size: 11px;
+  border-radius: 2px;
+}

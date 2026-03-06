@@ -1,0 +1,149 @@
+.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  animation: fadeUp 0.5s ease both;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* ── IMAGE ── */
+.imgWrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  background: var(--blush);
+}
+
+.img {
+  object-fit: cover;
+  transition: transform 0.6s ease !important;
+}
+
+.card:hover .img { transform: scale(1.06) !important; }
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 26, 29, 0.25);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay { opacity: 1; }
+
+.quickAdd {
+  font-size: 11px;
+  padding: 10px 20px;
+  gap: 6px;
+  transform: translateY(8px);
+  transition: transform 0.3s ease, opacity 0.3s ease, background 0.2s ease !important;
+  opacity: 0;
+}
+
+.card:hover .quickAdd {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ── INFO ── */
+.info {
+  padding: 16px 0 4px;
+}
+
+.category {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 6px;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reviewCount {
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.originalPrice {
+  font-size: 12px;
+  color: var(--text-light);
+  text-decoration: line-through;
+}
+
+.currentPrice {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  font-family: var(--font-display);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile: remove overlay on touch – just show quick add always */
+@media (hover: none) {
+  .overlay { opacity: 1; background: transparent; padding-bottom: 12px; }
+  .quickAdd { opacity: 1; transform: none; font-size: 10px; padding: 8px 14px; }
+}
+
+@media (max-width: 640px) {
+  .info { padding: 10px 0 2px; }
+  .name { font-size: 1rem; }
+  .desc { display: none; }
+}

@@ -1,0 +1,87 @@
+.empty, .success {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 60vh; text-align: center; gap: 16px; padding: 40px 24px;
+}
+.successIcon { font-size: 4rem; margin-bottom: 8px; }
+.success h1 { font-size: 2.2rem; font-weight: 300; }
+.success p { color: var(--text-muted); max-width: 480px; }
+.successSub { font-size: 14px; margin-top: -8px; }
+
+.header { text-align: center; margin-bottom: 40px; }
+.logoLink { display: inline-flex; align-items: center; gap: 0; text-decoration: none; }
+.logoScript { font-family: var(--font-script); font-size: 2.2rem; color: var(--green); line-height: 1; }
+
+/* ── PROGRESS ── */
+.progress {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; margin-bottom: 48px; flex-wrap: nowrap;
+}
+.progressStep {
+  display: flex; align-items: center; gap: 0; color: var(--text-light);
+  font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em;
+}
+.progressDot {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--border); color: var(--text-light);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+.progressActive .progressDot { background: var(--text); color: white; }
+.progressDone .progressDot { background: var(--green); color: white; }
+.progressLabel { margin: 0 10px; white-space: nowrap; }
+.progressActive .progressLabel { color: var(--text); }
+.progressLine { width: 48px; height: 1px; background: var(--border); flex-shrink: 0; }
+
+.layout {
+  display: grid; grid-template-columns: 1fr 360px; gap: 56px; align-items: start;
+}
+
+/* ── FORM ── */
+.section { animation: fadeUp 0.4s ease both; }
+.sectionTitle { font-size: 1.4rem; font-weight: 400; margin-bottom: 28px; }
+
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.fieldWrap { margin-bottom: 16px; }
+.fieldWrap label { display: block; margin-bottom: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+
+.stripeNote {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: var(--green-mist); padding: 14px 16px; border-radius: 2px;
+  font-size: 13px; color: var(--green); margin-bottom: 24px;
+}
+
+.nav { display: flex; justify-content: space-between; align-items: center; margin-top: 32px; gap: 16px; }
+.nextBtn { flex: 1; justify-content: center; }
+
+/* ── SIDEBAR ── */
+.sidebar {
+  background: var(--warm-white); border: 1px solid var(--border);
+  padding: 28px; position: sticky; top: 96px;
+}
+.sidebarTitle { font-size: 1.1rem; font-weight: 500; margin-bottom: 20px; }
+.sidebarItems { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+.sidebarItem { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.sidebarItemInfo { display: flex; gap: 8px; flex: 1; min-width: 0; }
+.sidebarItemQty { font-size: 12px; color: var(--text-light); flex-shrink: 0; }
+.sidebarItemName { font-size: 13px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sidebarItemPrice { font-size: 13px; font-weight: 500; flex-shrink: 0; }
+.sidebarDivider { height: 1px; background: var(--border); margin: 14px 0; }
+.sidebarRow { display: flex; justify-content: space-between; font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+.sidebarTotal { font-size: 15px !important; font-weight: 600 !important; color: var(--text) !important; margin-top: 8px; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: static; order: -1; }
+  .progress { gap: 0; }
+  .progressLabel { display: none; }
+  .progressLine { width: 24px; }
+}
+
+@media (max-width: 480px) {
+  .row2 { grid-template-columns: 1fr; }
+  .nav { flex-direction: column-reverse; }
+  .nextBtn { width: 100%; }
+}

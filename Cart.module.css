@@ -1,0 +1,159 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+  gap: 16px;
+  padding: 40px 24px;
+}
+.emptyIcon { font-size: 3.5rem; }
+.empty h1 { font-size: 2rem; font-weight: 300; }
+.empty p { color: var(--text-muted); max-width: 340px; }
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 16px;
+}
+.title { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 300; }
+.clearBtn {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.clearBtn:hover { color: var(--rose); }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 56px;
+  align-items: start;
+}
+
+/* ── ITEMS ── */
+.items { display: flex; flex-direction: column; }
+
+.item {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 24px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.itemImg {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  overflow: hidden;
+  background: var(--blush);
+  flex-shrink: 0;
+}
+.itemImgEl { object-fit: cover; }
+
+.itemCat { font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-light); margin-bottom: 4px; }
+.itemName { font-family: var(--font-display); font-size: 1.15rem; color: var(--text); text-decoration: none; display: block; margin-bottom: 6px; }
+.itemName:hover { color: var(--rose); }
+.itemSub { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+.itemControls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.qtyWrap {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--border);
+}
+.qtyBtn {
+  width: 34px;
+  height: 34px;
+  background: white;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--text);
+  transition: background 0.2s;
+}
+.qtyBtn:hover { background: var(--blush); }
+.qty {
+  width: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  line-height: 34px;
+}
+
+.itemPrice { font-family: var(--font-display); font-size: 1.15rem; font-weight: 500; }
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s;
+}
+.removeBtn:hover { color: var(--rose); }
+
+/* ── SUMMARY ── */
+.summary {
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  padding: 32px;
+  position: sticky;
+  top: 96px;
+}
+.summaryTitle { font-size: 1.3rem; font-weight: 400; margin-bottom: 24px; }
+.summaryRows { display: flex; flex-direction: column; gap: 12px; }
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.shippingNote {
+  font-size: 11px;
+  color: var(--green);
+  font-weight: 500;
+  background: var(--green-mist);
+  padding: 8px 12px;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+.divider { height: 1px; background: var(--border); margin: 20px 0; }
+.total { font-size: 16px !important; font-weight: 600 !important; color: var(--text) !important; }
+
+.checkoutBtn { width: 100%; justify-content: center; margin-top: 20px; margin-bottom: 10px; }
+.continueBtn { width: 100%; justify-content: center; margin-bottom: 24px; }
+
+.trust { display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid var(--border); }
+.trust p { font-size: 12px; color: var(--text-muted); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .summary { position: static; }
+}
+
+@media (max-width: 640px) {
+  .item { grid-template-columns: 80px 1fr; grid-template-rows: auto auto; }
+  .itemControls { flex-direction: row; grid-column: 1 / -1; justify-content: space-between; }
+  .itemImg { width: 80px; height: 96px; }
+}
